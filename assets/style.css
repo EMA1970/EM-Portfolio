@@ -152,23 +152,24 @@ img {
     align-items: center;
 }
 
-.nav__icon,
-.nav__toggle {
+.nav_icon,
+.nav_toggle {
     color: var(--title-color);
     font-weight: var(--font-medium);
 }
 
-.nav__icon:hover {
+.nav_icon:hover {
     color: var(--first-color-alt);
 }
 
 /* cursor effects for nav toggle */
-.nav__toggle {
+.nav_toggle {
     font-size: 1.1rem;
     cursor: pointer;
 }
 
-.nav__toggle:hover {
+/* TODO: group hover effects for colors together*/
+.nav_toggle:hover {
     color: var(--first-color-alt);
 }
 
@@ -286,17 +287,62 @@ img {
     margin-bottom: var(--mb-2);
 }
 
-.home_scroll {
+/* .home_scroll {
     /* display:none;                      */
-}
+ */
 
 .home_scroll-button {
     color: var(--first-color);
     transition: .3s;
 
 }
+/* hover effect to move button to the side for .25rem */
+.home_scroll-button:hover{
+    transform: translateY(.25rem);
+}
+
+/* changing mouse icon size */
+.home_scroll-mouse{
+    font-size: 2rem;
+}
+
+/* Font style for text " scroll down" */
+.home_scroll-name{
+    font-size: var(--small-font-size);
+    color: var(--title-color);
+    font-weight: var(--font-medium);
+    margin-right: var(--mb-0-25);
+}
+
+/* chang size of arrow*/
+.home_scroll-arrow{
+    font-size: 1.25rem;
+}
 
 /* ===== Buttons ===== */
+.button{
+    display: inline-block;
+    background-color: var(--first-color);
+    color: #FFFF;
+    padding: 1rem;
+    border-radius: .5rem;
+    font-weight: var(--font-medium);
+}
+
+.button:hover{
+    background-color: var(--first-color-alt);
+}
+
+.button_icon{
+    font-size: 1.25rem;
+    margin-left: var(--mb-0-5);
+    transition: .3s;
+}
+
+.button--flex{
+    display: inline-flex;
+    align-items: center;
+}
 /* ===== about ===== */
 /* ===== skills ===== */
 /* ===== qualifications ===== */
